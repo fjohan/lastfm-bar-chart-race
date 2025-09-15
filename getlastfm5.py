@@ -6,7 +6,7 @@ import pandas as pd
 import json
 import os
 
-# Your API key, username, and starting date
+# Your API key, username, filenames
 API_KEY = 'your_api_key'
 USER = 'username'
 CSV_FILE = 'top_20_artists.csv'
@@ -104,7 +104,9 @@ def get_artist_category(artist_name, category_cache):
         save_cache(CATEGORY_CACHE_FILE, category_cache)  # Save updated cache
         return top_tag
 
-# Start from May 2007
+# Set start year and month here, e.g.
+#start_year = 2007
+#start_month = 5
 start_year = 2025
 start_month = 1
 end_year = time.localtime().tm_year
