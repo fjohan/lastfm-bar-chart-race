@@ -17,11 +17,19 @@ You can aggregate results **per month** or **per week**, and the output is saved
 
 ---
 
+## Uses
+You can use the generated data with d3.js to create Bar Chart Races like this:
+
+![Bar chart race](images/lastfm-bcr.png)
+
+---
+
 ## Requirements  
 - Python 3.8+  
 - Packages:  
   ```bash
   pip install requests pandas
+  ```
 
 ---
 
